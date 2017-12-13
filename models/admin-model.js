@@ -27,7 +27,8 @@ const adminSchema = new Schema(
       {
         type: String,
       }
-    ]
+    ],
+    admin: true
   },
   {
     timestamps: true

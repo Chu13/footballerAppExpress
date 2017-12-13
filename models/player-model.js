@@ -8,6 +8,10 @@ const playerSchema = new Schema(
       type: String,
       required: [true, 'Please tell us your name']
     },
+    username: {
+      type: String,
+      required: [true, 'Please write your username']
+    },
     email: {
       type: String,
       required: [true, 'Email is required']
@@ -25,7 +29,8 @@ const playerSchema = new Schema(
     },
     position:{
       type: String,
-    }
+    },
+    admin: false
   },
   {
     timestamps: true
