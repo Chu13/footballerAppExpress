@@ -22,13 +22,16 @@ const adminSchema = new Schema(
     },
     location: {
       type: String,
+      required: [true, 'Location of the field required']
     },
-    fields: [
+    fields:
       {
         type: String,
-      }
-    ],
-    admin: true
+      },
+    isAdmin: {
+      type: Boolean,
+      default: true
+    }
   },
   {
     timestamps: true

@@ -50,6 +50,12 @@ app.use(passport.session());
 const matchApi = require("./routes/match-api-router");
 app.use("/api", matchApi);
 
+const adminApi = require("./routes/admin-api-router");
+app.use("/api", adminApi);
+
+const playerApi = require("./routes/player-api-router");
+app.use("/api", playerApi);
+
 
 // End ROUTES ------------------------------------------------------
 

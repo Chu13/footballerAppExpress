@@ -30,7 +30,10 @@ const playerSchema = new Schema(
     position:{
       type: String,
     },
-    admin: false
+    admin: {
+      type: Boolean,
+      default: false 
+    }
   },
   {
     timestamps: true

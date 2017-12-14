@@ -1,20 +1,22 @@
 require("dotenv").config();
 require("../config/mongoose-setup");
 
-const Match = require("../models/match-model");
+const Admin = require("../models/admin-model");
 
 
-const matchList = [
+const admin =[
    {
-     fieldName: "Brickell Rooftop",
-     date: "December 19",
-     players: []
+      placeName: "Miami Soccer Field",
+      email: "miami@fields.com",
+      encryptedPassword: "Chu.0610",
+      phone: "(786)-393-9364",
+      location: "500 Brickell Avenue, Miami, FL 33131"
    }
-];
+ ];
 
-Match.create(matchList)
-  .then(() => {
-    console.log(`${results.length} match created`);
+Admin.create(admin)
+  .then((results) => {
+    console.log(`${results.length} admin created`);
   })
   .catch((err) => {
     console.log("Save ERROR!");
