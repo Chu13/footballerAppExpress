@@ -10,7 +10,7 @@ const matchSchema = new Schema(
     date: {
       type: String,
     },
-    legth: {
+    length: {
       type: Number
     },
     time: {

@@ -26,7 +26,7 @@ const adminSchema = new Schema(
     },
     fields:
       {
-        type: String,
+        type: Number,
       },
     isAdmin: {
       type: Boolean,
